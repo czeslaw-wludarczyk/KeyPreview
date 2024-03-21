@@ -1,7 +1,7 @@
 # KeyPreview v1.0
 
 
-The application displays an indicator of the status of special keys in Windows.
+The application displays an indicator of the status of special keys in Windows systems only.
 KeyPreview allows you to set the area of ​​the indicator displayed and its size.
 
 ![image](https://github.com/czeslaw-wludarczyk/KeyPreview/assets/28139907/686bf978-da32-434f-99f6-e3297d6cab01)
