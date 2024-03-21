@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.310,=E:\Programowanie\Delphi\KeyVisualizer\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.177,E:\Programowanie\Delphi\KeyVisualizer\Unit1.pas=E:\Programowanie\Delphi\KeyVisualizer\SaveSettings.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.335,=E:\Programowanie\Delphi\KeyVisualizer\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.270,E:\Programowanie\Delphi\KeyVisualizer\KeyVisualizer.dproj=E:\Programowanie\Delphi\KeyVisualizer\KeyPreview.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.294,E:\Programowanie\Delphi\KeyVisualizer\Unit1.pas=E:\Programowanie\Delphi\KeyVisualizer\LoadSettings.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.046,=E:\Programowanie\Delphi\KeyVisualizer\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.200,E:\Programowanie\Delphi\Default\Unit1.dfm=E:\Programowanie\Delphi\KeyVisualizer\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.367,=E:\Programowanie\Delphi\Default\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.889,E:\Programowanie\Delphi\KeyVisualizer\OSD.dfm=E:\Programowanie\Delphi\KeyVisualizer\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.889,E:\Programowanie\Delphi\KeyVisualizer\OSD.pas=E:\Programowanie\Delphi\KeyVisualizer\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.358,E:\Programowanie\Delphi\Default\Project1.dproj=E:\Programowanie\Delphi\KeyVisualizer\KeyVisualizer.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.470,=E:\Programowanie\Delphi\Default\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.200,E:\Programowanie\Delphi\Default\Unit1.pas=E:\Programowanie\Delphi\KeyVisualizer\Main.pas</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
