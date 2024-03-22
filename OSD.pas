@@ -19,8 +19,9 @@ type
   private
     { Private declarations }
     procedure SetPosition(position: Integer);
-    procedure Size(size: Integer);
-    procedure WMMouseActivate(var Message: TWMMouseActivate); message WM_MOUSEACTIVATE;
+    procedure Size(Size: Integer);
+    procedure WMMouseActivate(var Message: TWMMouseActivate);
+      message WM_MOUSEACTIVATE;
   public
     { Public declarations }
 
@@ -43,10 +44,10 @@ begin
   Message.Result := MA_NOACTIVATE;
 end;
 
-procedure TfrmOSD.Size(size: Integer);
+procedure TfrmOSD.Size(Size: Integer);
 begin
 
-  case size of
+  case Size of
     1:
       begin
         frmOSD.Width := MulDiv(64, CurrentPPI, 96);
@@ -84,7 +85,7 @@ end;
 
 procedure TfrmOSD.SetPosition(position: Integer);
 begin
-  self.Position := poDesigned;
+  self.position := poDesigned;
   case position of
     1:
       begin
@@ -168,7 +169,6 @@ begin
   if frmMain.rbLarge.Checked then
     Size(3);
 
-
   Timer1.Enabled := false;
   Timer1.Enabled := true;
 end;
@@ -180,4 +180,3 @@ begin
 end;
 
 end.
-

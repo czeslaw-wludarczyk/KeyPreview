@@ -615,6 +615,7 @@ object frmMain: TfrmMain
     end
     object About1: TMenuItem
       Caption = 'About...'
+      OnClick = About1Click
     end
   end
 end

@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>KeyPreview.dpr</MainSource>
@@ -115,6 +115,8 @@
         <Icon_MainIcon>Gfx\KeyVisualizer1.ico</Icon_MainIcon>
         <UWP_DelphiLogo44>Gfx\KeyVisualizer1.ico</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>Gfx\KeyVisualizer1.ico</UWP_DelphiLogo150>
+        <VerInfo_MinorVer>1</VerInfo_MinorVer>
+        <VerInfo_Keys>CompanyName=CWStudio;FileDescription=$(MSBuildProjectName);FileVersion=1.1.0.0;InternalName=KeyPreview;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.1.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -150,8 +152,9 @@
             <Form>frmOSD</Form>
         </DCCReference>
         <DCCReference Include="LoadSettings.pas"/>
-        <DCCReference Include="SaveSettings.pas">
-            <Form>$R *.res</Form>
+        <DCCReference Include="SaveSettings.pas"/>
+        <DCCReference Include="About.pas">
+            <Form>frmAbout</Form>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
@@ -216,6 +219,12 @@
                 <DeployFile LocalName="Win64\Debug\KeyPreview.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>KeyPreview.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win64\Debug\KeyPreview.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win64">
+                        <RemoteName>KeyPreview.rsm</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

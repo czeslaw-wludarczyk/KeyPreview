@@ -3,7 +3,8 @@ unit LoadSettings;
 interface
 
 uses Winapi.Windows, System.IOUtils, System.IniFiles, ShlObj, System.SysUtils,
-  System.UITypes, Graphics, System.Classes, System.UIConsts, StrUtils, VCL.Buttons;
+  System.UITypes, Graphics, System.Classes, System.UIConsts, StrUtils,
+  VCL.Buttons;
 
 var
   first_run: Boolean;
@@ -18,10 +19,10 @@ var
   INI: TMemIniFile;
   filename: string;
 
-  //Get ProgramData folder for save configuration file
+  // Get ProgramData folder for save configuration file
 function GetProgramDataFolder: string;
 var
-  Path: array[0..MAX_PATH] of Char;
+  Path: array [0 .. MAX_PATH] of Char;
 begin
   if SUCCEEDED(SHGetFolderPath(0, CSIDL_COMMON_APPDATA, 0, SHGFP_TYPE_CURRENT,
     @Path[0])) then
@@ -32,23 +33,23 @@ end;
 
 procedure LoadConfiguration();
 var
-  path: string;
+  Path: string;
   i: Integer;
   sButton: TSpeedButton;
 begin
   filename := 'main.cfg';
-  path := GetProgramDataFolder + '\KeyPreview\';
+  Path := GetProgramDataFolder + '\KeyPreview\';
 
-  if not FileExists(path + filename) then
+  if not FileExists(Path + filename) then
   begin
     first_run := true;
     Exit;
   end;
 
-  //Inicjalize MemIniFile and set encoding to UTF8
-  INI := TMemIniFile.Create(path + filename, TEncoding.UTF8);
+  // Inicjalize MemIniFile and set encoding to UTF8
+  INI := TMemIniFile.Create(Path + filename, TEncoding.UTF8);
 
-  //Try read Configuration for editor from cfg file
+  // Try read Configuration for editor from cfg file
 
   i := INI.ReadInteger('Options', 'Size', 1);
   if i = 1 then
@@ -59,18 +60,21 @@ begin
     frmMain.rbLarge.Checked := true;
 
   frmMain.swNumLock.Checked := INI.ReadBool('Show_indicator', 'NumLock', true);
-  frmMain.swCapsLock.Checked := INI.ReadBool('Show_indicator', 'CapsLock', true);
-  frmMain.swScrollLock.Checked := INI.ReadBool('Show_indicator', 'ScrollLock', true);
+  frmMain.swCapsLock.Checked := INI.ReadBool('Show_indicator',
+    'CapsLock', true);
+  frmMain.swScrollLock.Checked := INI.ReadBool('Show_indicator',
+    'ScrollLock', true);
 
-  //Indicator Position
+  // Indicator Position
   for i := 1 to 9 do
   begin
-    sButton := frmMain.FindComponent('SpeedButton' + i.ToString) as TSpeedButton;
-    if sButton.Name = 'SpeedButton' + INI.ReadInteger('Options', 'Position', 5).ToString() then
+    sButton := frmMain.FindComponent('SpeedButton' + i.ToString)
+      as TSpeedButton;
+    if sButton.Name = 'SpeedButton' + INI.ReadInteger('Options', 'Position', 5)
+      .ToString() then
       sButton.Down := true;
   end;
 
 end;
 
 end.
-
