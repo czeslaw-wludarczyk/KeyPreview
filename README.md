@@ -1,4 +1,4 @@
-# KeyPreview v1.0
+# KeyPreview v1.1
 
 
 The application displays an indicator of the status of special keys in Windows systems only.
@@ -15,3 +15,9 @@ The application is free and can be used for personal and commercial purposes wit
 You use the application at your own risk, and the creator is not responsible for any problems resulting from the use of the application.
 
 (c)2024 CWStudio
+
+Adding an About window to the application.
+
+![image](https://github.com/czeslaw-wludarczyk/KeyPreview/assets/28139907/c23fd375-4237-421f-9077-b0d9431fd7e2)
+
+Correct some code bugs.
