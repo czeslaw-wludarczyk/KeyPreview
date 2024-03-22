@@ -20,4 +20,4 @@ Adding an About window to the application.
 
 ![image](https://github.com/czeslaw-wludarczyk/KeyPreview/assets/28139907/c23fd375-4237-421f-9077-b0d9431fd7e2)
 
-Correct some code bugs.
+Corrected some code bugs.
