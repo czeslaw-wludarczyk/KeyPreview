@@ -16,11 +16,11 @@ You use the application at your own risk, and the creator is not responsible for
 
 (c)2024 CWStudio
 
-
+<br><br><br>
 
 History
 
-Version 1.1
+<b>Version 1.1</b>
 
 Adding an About window to the application.
 
@@ -28,6 +28,6 @@ Adding an About window to the application.
 
 Corrected some code bugs.
 
-Version 1.0
+<b>Version 1.0</b>
 
 Release
