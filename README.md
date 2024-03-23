@@ -16,8 +16,18 @@ You use the application at your own risk, and the creator is not responsible for
 
 (c)2024 CWStudio
 
+
+
+History
+
+Version 1.1
+
 Adding an About window to the application.
 
 ![image](https://github.com/czeslaw-wludarczyk/KeyPreview/assets/28139907/c23fd375-4237-421f-9077-b0d9431fd7e2)
 
 Corrected some code bugs.
+
+Version 1.0
+
+Release
