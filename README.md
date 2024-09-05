@@ -30,4 +30,4 @@ Corrected some code bugs.
 
 <b>Version 1.0</b>
 
-Release
+Release.
